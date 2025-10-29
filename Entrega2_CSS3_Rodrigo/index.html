@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entrega2_CSS3_Rodrigo</title>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/utilities.css">
+</head>
+<body>
+  <header class="navbar">
+    <h1 class="logo">Entrega2_CSS3_Rodrigo</h1>
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="about.html">Sobre</a></li>
+        <li class="dropdown">
+          <a href="#">Serviços</a>
+          <ul class="dropdown-content">
+            <li><a href="#">Design</a></li>
+            <li><a href="#">Desenvolvimento</a></li>
+            <li><a href="#">Consultoria</a></li>
+          </ul>
+        </li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <div class="hamburger">☰</div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>Bem-vindo ao Projeto CSS3</h2>
+      <p>Interface responsiva, moderna e acessível.</p>
+      <button class="btn-primary">Saiba Mais</button>
+    </section>
+
+    <section class="cards">
+      <div class="card">
+        <h3>Layout Responsivo</h3>
+        <p>Construído com Grid e Flexbox.</p>
+      </div>
+      <div class="card">
+        <h3>Design System</h3>
+        <p>Paleta de cores e tipografia organizadas.</p>
+      </div>
+      <div class="card">
+        <h3>Componentes Interativos</h3>
+        <p>Botões, formulários, alerts e mais.</p>
+      </div>
+    </section>
+
+    <section id="contato" class="form-section">
+      <h2>Fale Conosco</h2>
+      <form>
+        <label>Nome</label>
+        <input type="text" required>
+        <label>Email</label>
+        <input type="email" required>
+        <label>Mensagem</label>
+        <textarea required></textarea>
+        <button type="submit" class="btn-primary">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 - Rodrigo Felipe Oji de Almeida</p>
+  </footer>
+
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const menu = document.querySelector('.menu ul');
+    hamburger.addEventListener('click', () => {
+      menu.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>
