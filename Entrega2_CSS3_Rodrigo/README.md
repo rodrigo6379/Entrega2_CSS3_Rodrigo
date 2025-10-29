@@ -23,18 +23,3 @@ Entrega2_CSS3_Rodrigo/
 │   └── utilities.css
 └── assets/
 ```
-
-## 🧭 Publicar no GitHub Pages
-1. Crie o repositório público no GitHub com o nome **Entrega2_CSS3_Rodrigo**
-2. No terminal, execute:
-```bash
-git init
-git add .
-git commit -m "Entrega 2 - Rodrigo Felipe Oji de Almeida"
-git branch -M main
-git remote add origin https://github.com/SEU_USUARIO/Entrega2_CSS3_Rodrigo.git
-git push -u origin main
-```
-3. Vá em **Configurações → Pages → Source → Main Branch → Save**
-4. Acesse o site publicado em:  
-   👉 `https://seuusuario.github.io/Entrega2_CSS3_Rodrigo/`
